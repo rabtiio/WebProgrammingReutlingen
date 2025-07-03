@@ -1,0 +1,11 @@
+mysql
+CREATE USER 'devweb'@'localhost' IDENTIFIED BY 'DevWev*12';
+GRANT ALL PRIVILEGES ON * . * TO 'devweb'@'localhost';
+FLUSH PRIVILEGES;
+
+puis lancer init.php
+
+
+
+devweb
+DevWev*12
