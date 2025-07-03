@@ -77,6 +77,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (json) {
                 if (json.response === 'yes') {
+                    window.location.href = 'index.php';
                 } else {
                     document.getElementById('erreur').innerHTML = json.response;
                     console.log(json.temp, json.tab);
@@ -84,7 +85,6 @@ $(document).ready(function () {
                 }
             }
         });
-        window.location.href = 'index.php';
     });
 });
 
